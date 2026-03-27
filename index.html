@@ -5,132 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="CV numerique d'Etien Cedric Manouan - Consultant en transformation digitale, developpement d'outils metiers, web admin et applications mobiles."
+      content="CV premium institutionnel d'Etien Cedric Manouan, consultant externe en transformation digitale, outils metiers, web admin et applications mobiles."
     />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&amp;family=Sora:wght@500;600;700;800&amp;display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./CSS/style.css" />
-    <title>Etien Cedric Manouan | Consultant Transformation Digitale</title>
+    <title>Etien Cedric Manouan | Premium CV</title>
   </head>
   <body class="lang-fr">
-    <div class="bg-orb bg-orb--one"></div>
-    <div class="bg-orb bg-orb--two"></div>
-    <div class="bg-grid"></div>
+    <div class="scroll-progress" aria-hidden="true">
+      <span id="scroll-progress-bar"></span>
+    </div>
+
+    <div class="premium-bg premium-bg--a"></div>
+    <div class="premium-bg premium-bg--b"></div>
+    <div class="premium-noise"></div>
 
     <header class="topbar">
-      <a href="#home" class="brand">
-        <span class="brand-dot"></span>
-        <span>Etien Cedric Manouan</span>
+      <a href="#overview" class="brand magnetic" data-magnetic-strength="10">
+        <span class="brand-mark"></span>
+        <span>
+          <strong>Etien Cedric Manouan</strong>
+          <small>
+            <span class="i18n-inline fr">Consultant Externe</span>
+            <span class="i18n-inline en">External Consultant</span>
+          </small>
+        </span>
       </a>
 
-      <nav class="topnav">
-        <a href="#projects">
+      <nav class="topnav" aria-label="Primary">
+        <a href="#projects" data-nav-link="projects">
           <span class="i18n-inline fr">Realisations</span>
           <span class="i18n-inline en">Projects</span>
         </a>
-        <a href="#experience">
-          <span class="i18n-inline fr">Parcours</span>
-          <span class="i18n-inline en">Experience</span>
-        </a>
-        <a href="#mission">
+        <a href="#mission" data-nav-link="mission">
           <span class="i18n-inline fr">Mission Mairie</span>
           <span class="i18n-inline en">City Mission</span>
         </a>
+        <a href="#experience" data-nav-link="experience">
+          <span class="i18n-inline fr">Parcours</span>
+          <span class="i18n-inline en">Experience</span>
+        </a>
+        <a href="#capabilities" data-nav-link="capabilities">
+          <span class="i18n-inline fr">Capacites</span>
+          <span class="i18n-inline en">Capabilities</span>
+        </a>
       </nav>
 
-      <div class="lang-switch" role="group" aria-label="Language selector">
-        <button type="button" class="lang-btn is-active" data-lang-btn="fr">FR</button>
-        <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+      <div class="topbar-actions">
+        <button type="button" class="presentation-btn ripple-target" id="presentation-toggle">
+          <span class="i18n-inline fr">Mode presentation</span>
+          <span class="i18n-inline en">Presentation mode</span>
+        </button>
+
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button type="button" class="lang-btn is-active" data-lang-btn="fr">FR</button>
+          <button type="button" class="lang-btn" data-lang-btn="en">EN</button>
+        </div>
       </div>
     </header>
 
-    <main id="home">
-      <section class="hero reveal">
+    <main>
+      <section id="overview" class="hero premium-section reveal">
         <div class="hero-copy">
           <p class="hero-chip">
-            <span class="i18n-inline fr">Disponible pour mission de conseil externe</span>
-            <span class="i18n-inline en">Available for external consulting mission</span>
+            <span class="i18n-inline fr">Profil premium - mission publique et transformation digitale</span>
+            <span class="i18n-inline en">Premium profile - public mission and digital transformation</span>
           </p>
 
           <h1>
             <span class="i18n-inline fr"
-              >Consultant Externe en Transformation Digitale &amp; Developpement d'Outils Metiers</span
+              >Consultant Externe en Transformation Digitale, Outils Metiers et Pilotage Operationnel</span
             >
             <span class="i18n-inline en"
-              >External Consultant in Digital Transformation &amp; Business Tool Development</span
+              >External Consultant in Digital Transformation, Business Tools and Operational Steering</span
             >
           </h1>
 
-          <p class="hero-subtitle">
-            <span class="i18n-inline fr"
-              >Web admin, applications Android/iOS, experiences numeriques modernes et pilotage de
-              projets a impact.</span
-            >
-            <span class="i18n-inline en"
-              >Web admin, Android/iOS apps, modern digital experiences, and impact-driven project
-              leadership.</span
-            >
+          <p class="hero-subtitle i18n-block fr">
+            Je conçois des plateformes utiles et claires pour structurer les operations, accelerer
+            la decision et assurer une tracabilite fiable.
+          </p>
+          <p class="hero-subtitle i18n-block en">
+            I design useful and clear platforms to structure operations, accelerate decisions, and
+            guarantee reliable traceability.
           </p>
 
           <p class="hero-lead i18n-block fr">
-            Fort d'une experience terrain en management et en execution, je conçois des solutions
-            digitales claires, traçables et orientees resultat. Mon objectif: transformer des besoins
-            operationnels en outils concrets, utiles et durables.
+            Mon approche combine execution terrain, vision metier et delivery digital. Je transforme
+            un besoin institutionnel en systeme concret: tableau de bord, workflow, suivi des actions,
+            preuves de resultat.
           </p>
           <p class="hero-lead i18n-block en">
-            With strong hands-on experience in leadership and execution, I design digital solutions
-            that are clear, traceable, and results-focused. My goal: turn operational needs into
-            concrete, useful, and sustainable tools.
+            My approach combines field execution, business vision, and digital delivery. I turn an
+            institutional need into a concrete system: dashboard, workflows, action tracking, and
+            measurable outcomes.
           </p>
 
-          <div class="stats">
-            <article class="stat-card">
-              <p class="stat-value" data-target="15" data-suffix="+">0</p>
-              <p class="stat-label">
-                <span class="i18n-inline fr">annees d'experience management &amp; business</span>
-                <span class="i18n-inline en">years of management &amp; business experience</span>
-              </p>
-            </article>
-            <article class="stat-card">
-              <p class="stat-value" data-target="4" data-suffix="+">0</p>
-              <p class="stat-label">
-                <span class="i18n-inline fr">produits digitaux recents publies</span>
-                <span class="i18n-inline en">recent digital products delivered</span>
-              </p>
-            </article>
-            <article class="stat-card">
-              <p class="stat-value" data-target="3" data-suffix=" plateformes">0</p>
-              <p class="stat-label">
-                <span class="i18n-inline fr">web admin + Android + iOS sur un meme produit</span>
-                <span class="i18n-inline en">web admin + Android + iOS in one product stack</span>
-              </p>
-            </article>
-          </div>
-
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#projects">
-              <span class="i18n-inline fr">Voir les realisations</span>
+          <div class="hero-cta">
+            <a class="btn btn-primary ripple-target magnetic" data-magnetic-strength="12" href="#mission">
+              <span class="i18n-inline fr">Voir la proposition Mairie</span>
+              <span class="i18n-inline en">See City Proposal</span>
+            </a>
+            <a class="btn btn-secondary ripple-target magnetic" data-magnetic-strength="10" href="#projects">
+              <span class="i18n-inline fr">Explorer les projets</span>
               <span class="i18n-inline en">Explore projects</span>
             </a>
-            <a class="btn btn-ghost" href="#contact">
-              <span class="i18n-inline fr">Me contacter</span>
-              <span class="i18n-inline en">Contact me</span>
-            </a>
+          </div>
+
+          <div class="stat-grid">
+            <article class="stat-card magnetic" data-magnetic-strength="8">
+              <p class="stat-value" data-target="15" data-suffix="+">0</p>
+              <p class="stat-label">
+                <span class="i18n-inline fr">ans d'experience management &amp; business</span>
+                <span class="i18n-inline en">years in management &amp; business</span>
+              </p>
+            </article>
+            <article class="stat-card magnetic" data-magnetic-strength="8">
+              <p class="stat-value" data-target="4" data-suffix="+">0</p>
+              <p class="stat-label">
+                <span class="i18n-inline fr">projets digitaux deployes recemment</span>
+                <span class="i18n-inline en">recent digital projects delivered</span>
+              </p>
+            </article>
+            <article class="stat-card magnetic" data-magnetic-strength="8">
+              <p class="stat-value" data-target="3" data-suffix=" plateformes">0</p>
+              <p class="stat-label">
+                <span class="i18n-inline fr">Web admin + Android + iOS sur meme produit</span>
+                <span class="i18n-inline en">Web admin + Android + iOS in one product</span>
+              </p>
+            </article>
           </div>
         </div>
 
-        <aside class="profile-card reveal">
-          <div class="profile-photo-wrap">
-            <img src="./img/me.svg" alt="Portrait d'Etien Cedric Manouan" class="profile-photo" />
+        <aside class="identity-panel reveal magnetic" data-magnetic-strength="10">
+          <div class="identity-photo-frame">
+            <img src="./img/me.svg" alt="Portrait d'Etien Cedric Manouan" class="identity-photo" />
           </div>
 
-          <div class="profile-meta">
+          <div class="identity-meta">
             <h2>Etien Cedric Manouan</h2>
             <p>
               <span class="i18n-inline fr">Fondateur, manager commercial, consultant digital</span>
@@ -138,351 +157,397 @@
             </p>
           </div>
 
-          <ul class="contact-list" id="contact">
+          <ul class="identity-list" id="contact">
             <li>
-              <span class="contact-key">Phone</span>
+              <span>Phone</span>
               <a href="tel:+2250779805153">+225 07 79 805 153</a>
             </li>
             <li>
-              <span class="contact-key">Email</span>
+              <span>Email</span>
               <a href="mailto:manouanec@gmail.com">manouanec@gmail.com</a>
             </li>
             <li>
-              <span class="contact-key">LinkedIn</span>
+              <span>LinkedIn</span>
               <a href="https://www.linkedin.com/in/etien-c%C3%A9dric-manouan/" target="_blank" rel="noreferrer"
                 >linkedin.com/in/etien-cedric-manouan</a
               >
             </li>
             <li>
-              <span class="contact-key">
+              <span>
                 <span class="i18n-inline fr">Zone</span>
                 <span class="i18n-inline en">Coverage</span>
               </span>
-              <span>
-                <span class="i18n-inline fr">France &amp; Cote d'Ivoire</span>
-                <span class="i18n-inline en">France &amp; Cote d'Ivoire</span>
-              </span>
+              <strong>France &amp; Cote d'Ivoire</strong>
             </li>
           </ul>
 
-          <div class="qr-card">
+          <div class="qr-zone">
             <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&amp;data=https%3A%2F%2Fgithub.com%2FManomikus%2Fcv"
-              alt="QR code vers le CV en ligne"
-              width="180"
-              height="180"
+              src="https://api.qrserver.com/v1/create-qr-code/?size=170x170&amp;data=https%3A%2F%2Fgithub.com%2FManomikus%2Fcv"
+              alt="QR code to online CV"
+              width="170"
+              height="170"
             />
             <p>
-              <span class="i18n-inline fr">Scanner pour ouvrir la version en ligne</span>
-              <span class="i18n-inline en">Scan to open the online version</span>
+              <span class="i18n-inline fr">Scan: ouverture immediate du CV numerique</span>
+              <span class="i18n-inline en">Scan: instant access to the digital CV</span>
             </p>
           </div>
         </aside>
       </section>
 
-      <section id="projects" class="section reveal">
-        <div class="section-head">
+      <section id="projects" class="section premium-section reveal">
+        <header class="section-head">
+          <p class="section-kicker">
+            <span class="i18n-inline fr">Preuves de delivery</span>
+            <span class="i18n-inline en">Delivery evidence</span>
+          </p>
           <h2>
-            <span class="i18n-inline fr">Realisations recentes</span>
-            <span class="i18n-inline en">Recent Deliveries</span>
+            <span class="i18n-inline fr">Realisations digitales recemment mises en production</span>
+            <span class="i18n-inline en">Digital deliveries recently released to production</span>
           </h2>
-          <p class="i18n-block fr">
-            Projets web et produit menes de l'idee au deploiement, avec focus sur l'usage reel,
-            l'image de marque et l'efficacite operationnelle.
-          </p>
-          <p class="i18n-block en">
-            Web and product projects delivered end-to-end, focused on real usage, brand impact, and
-            operational efficiency.
-          </p>
-        </div>
+        </header>
 
         <div class="project-grid">
-          <article class="project-card reveal">
+          <article class="project-card reveal magnetic" data-magnetic-strength="10">
             <h3>Voyage O Sri Lanka</h3>
-            <p class="project-type">SaaS / Tourism Operations</p>
-            <ul class="tag-list">
-              <li>Web Admin</li>
-              <li>Android</li>
-              <li>iOS</li>
+            <p class="project-type">Web Admin + Android + iOS</p>
+            <ul class="project-tags">
+              <li>Operations</li>
+              <li>Workflow</li>
+              <li>Multi-platform</li>
             </ul>
-            <ul class="impact-list i18n-block fr">
-              <li>1 back-office central pour piloter les operations voyage.</li>
-              <li>2 applications mobiles connectees pour usage terrain.</li>
-              <li>Architecture produit multi-plateforme coherente.</li>
+            <ul class="project-metrics i18n-block fr">
+              <li>1 back-office central pour pilotage des operations voyage.</li>
+              <li>2 apps mobiles connectees pour execution terrain.</li>
+              <li>3 plateformes synchronisees sur le meme socle produit.</li>
             </ul>
-            <ul class="impact-list i18n-block en">
-              <li>1 centralized back-office to manage travel operations.</li>
-              <li>2 connected mobile apps for field usage.</li>
-              <li>Consistent multi-platform product architecture.</li>
+            <ul class="project-metrics i18n-block en">
+              <li>1 centralized back-office for travel operation steering.</li>
+              <li>2 connected mobile apps for field execution.</li>
+              <li>3 synchronized platforms in one product system.</li>
             </ul>
             <a href="https://app.voyageosrilanka.com" target="_blank" rel="noreferrer">app.voyageosrilanka.com</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal magnetic" data-magnetic-strength="10">
             <h3>9Cut Barber</h3>
-            <p class="project-type">Brand Website</p>
-            <ul class="tag-list">
-              <li>UI Design</li>
+            <p class="project-type">Brand website / conversion</p>
+            <ul class="project-tags">
+              <li>Branding</li>
               <li>Responsive</li>
-              <li>Conversion</li>
+              <li>Lead capture</li>
             </ul>
-            <ul class="impact-list i18n-block fr">
-              <li>Positionnement digital premium pour salon de coiffure.</li>
-              <li>Experience mobile optimisee pour prise de contact rapide.</li>
-              <li>Image de marque modernisee et valorisante.</li>
+            <ul class="project-metrics i18n-block fr">
+              <li>Positionnement premium et identite digitale claire.</li>
+              <li>UX mobile orientee prise de contact rapide.</li>
+              <li>Mise en avant service et confiance client.</li>
             </ul>
-            <ul class="impact-list i18n-block en">
-              <li>Premium digital positioning for a barber business.</li>
-              <li>Mobile-first experience for quick customer contact.</li>
-              <li>Modernized and high-value brand presence.</li>
+            <ul class="project-metrics i18n-block en">
+              <li>Premium positioning and clear digital identity.</li>
+              <li>Mobile UX optimized for rapid contact.</li>
+              <li>Service visibility and stronger customer trust.</li>
             </ul>
             <a href="https://9cut-barber.netlify.app" target="_blank" rel="noreferrer">9cut-barber.netlify.app</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal magnetic" data-magnetic-strength="10">
             <h3>ODS Group</h3>
-            <p class="project-type">Culture / Event Website</p>
-            <ul class="tag-list">
-              <li>Web Experience</li>
+            <p class="project-type">Culture and event showcase</p>
+            <ul class="project-tags">
               <li>Storytelling</li>
-              <li>Showcase</li>
+              <li>Content structure</li>
+              <li>Visibility</li>
             </ul>
-            <ul class="impact-list i18n-block fr">
-              <li>Structuration claire de l'offre artistique et evenementielle.</li>
-              <li>Navigation intuitive pour presenter spectacles et activites.</li>
-              <li>Socle digital propre pour communication continue.</li>
+            <ul class="project-metrics i18n-block fr">
+              <li>Structuration nette des offres artistiques.</li>
+              <li>Presentation lisible des activites et spectacles.</li>
+              <li>Base web stable pour communication continue.</li>
             </ul>
-            <ul class="impact-list i18n-block en">
-              <li>Clear structuring of artistic and event offerings.</li>
-              <li>Intuitive navigation for shows and activities.</li>
-              <li>Solid digital base for ongoing communication.</li>
+            <ul class="project-metrics i18n-block en">
+              <li>Clear structure for artistic offerings.</li>
+              <li>Readable presentation of activities and shows.</li>
+              <li>Stable web foundation for ongoing communication.</li>
             </ul>
             <a href="https://odsv1.netlify.app" target="_blank" rel="noreferrer">odsv1.netlify.app</a>
           </article>
 
-          <article class="project-card reveal">
+          <article class="project-card reveal magnetic" data-magnetic-strength="10">
             <h3>KaMaat Conseil</h3>
-            <p class="project-type">Consulting Brand &amp; Website</p>
-            <ul class="tag-list">
-              <li>Business Positioning</li>
-              <li>Web Presence</li>
-              <li>Human-Centered</li>
+            <p class="project-type">Consulting brand launch</p>
+            <ul class="project-tags">
+              <li>Positioning</li>
+              <li>Message</li>
+              <li>Web identity</li>
             </ul>
-            <ul class="impact-list i18n-block fr">
+            <ul class="project-metrics i18n-block fr">
               <li>Lancement d'une marque de conseil orientee performance durable.</li>
-              <li>Creation de la vitrine digitale "Architecte de Trajectoire Humaine".</li>
-              <li>Alignement entre message, expertise et visibilite en ligne.</li>
+              <li>Narratif "Architecte de Trajectoire Humaine" declinable.</li>
+              <li>Alignement marque, expertise et presence digitale.</li>
             </ul>
-            <ul class="impact-list i18n-block en">
+            <ul class="project-metrics i18n-block en">
               <li>Launch of a consulting brand focused on sustainable performance.</li>
-              <li>Digital showcase creation for "Human Trajectory Architect".</li>
-              <li>Alignment between message, expertise, and online visibility.</li>
+              <li>Deployable narrative: "Human Trajectory Architect".</li>
+              <li>Alignment between brand, expertise, and digital presence.</li>
             </ul>
             <a href="https://kamaat-conseil.com" target="_blank" rel="noreferrer">kamaat-conseil.com</a>
           </article>
         </div>
       </section>
 
-      <section class="section reveal" id="skills">
-        <div class="section-head">
+      <section id="mission" class="section premium-section mission-hub reveal">
+        <header class="section-head">
+          <p class="section-kicker">
+            <span class="i18n-inline fr">Proposition institutionnelle</span>
+            <span class="i18n-inline en">Institutional proposal</span>
+          </p>
           <h2>
-            <span class="i18n-inline fr">Competences cle</span>
-            <span class="i18n-inline en">Core Skills</span>
+            <span class="i18n-inline fr">Outil de pilotage et tracabilite pour la Mairie de Port-Bouet</span>
+            <span class="i18n-inline en">Steering and traceability tool for Port-Bouet City Hall</span>
           </h2>
-        </div>
+        </header>
 
-        <div class="skills-grid">
-          <article class="skill-panel">
-            <h3>
-              <span class="i18n-inline fr">Produit &amp; Transformation Digitale</span>
-              <span class="i18n-inline en">Product &amp; Digital Transformation</span>
-            </h3>
-            <ul>
-              <li>
-                <span class="i18n-inline fr">Cadrage de besoins metiers</span>
-                <span class="i18n-inline en">Business requirements framing</span>
-              </li>
-              <li>
-                <span class="i18n-inline fr">Conception d'outils de pilotage et traçabilite</span>
-                <span class="i18n-inline en">Design of monitoring and traceability tools</span>
-              </li>
-              <li>
-                <span class="i18n-inline fr">Vision orientee impact terrain</span>
-                <span class="i18n-inline en">Field-impact-driven vision</span>
-              </li>
-            </ul>
-          </article>
+        <div class="mission-layout">
+          <div class="workflow-steps" role="tablist" aria-label="Workflow steps">
+            <button class="workflow-step is-active ripple-target magnetic" data-magnetic-strength="8" data-workflow-step="signalement" type="button">
+              <span>1</span>
+              <strong>
+                <span class="i18n-inline fr">Signalement</span>
+                <span class="i18n-inline en">Report</span>
+              </strong>
+            </button>
+            <button class="workflow-step ripple-target magnetic" data-magnetic-strength="8" data-workflow-step="affectation" type="button">
+              <span>2</span>
+              <strong>
+                <span class="i18n-inline fr">Affectation</span>
+                <span class="i18n-inline en">Assignment</span>
+              </strong>
+            </button>
+            <button class="workflow-step ripple-target magnetic" data-magnetic-strength="8" data-workflow-step="suivi" type="button">
+              <span>3</span>
+              <strong>
+                <span class="i18n-inline fr">Suivi</span>
+                <span class="i18n-inline en">Tracking</span>
+              </strong>
+            </button>
+            <button class="workflow-step ripple-target magnetic" data-magnetic-strength="8" data-workflow-step="cloture" type="button">
+              <span>4</span>
+              <strong>
+                <span class="i18n-inline fr">Cloture</span>
+                <span class="i18n-inline en">Closure</span>
+              </strong>
+            </button>
+            <button class="workflow-step ripple-target magnetic" data-magnetic-strength="8" data-workflow-step="reporting" type="button">
+              <span>5</span>
+              <strong>
+                <span class="i18n-inline fr">Reporting</span>
+                <span class="i18n-inline en">Reporting</span>
+              </strong>
+            </button>
+          </div>
 
-          <article class="skill-panel">
-            <h3>
-              <span class="i18n-inline fr">Developpement &amp; Delivery</span>
-              <span class="i18n-inline en">Development &amp; Delivery</span>
-            </h3>
-            <ul>
-              <li>HTML5 / CSS3 / SCSS</li>
-              <li>JavaScript / UI interactives</li>
-              <li>
-                <span class="i18n-inline fr">Web admin + mobile Android/iOS</span>
-                <span class="i18n-inline en">Web admin + Android/iOS mobile</span>
-              </li>
-              <li>
-                <span class="i18n-inline fr">Deploiement et suivi de versions</span>
-                <span class="i18n-inline en">Deployment and version tracking</span>
-              </li>
-            </ul>
-          </article>
+          <article class="workflow-detail reveal" id="workflow-detail">
+            <h3 class="i18n-block fr" id="workflow-title-fr"></h3>
+            <h3 class="i18n-block en" id="workflow-title-en"></h3>
 
-          <article class="skill-panel">
-            <h3>
-              <span class="i18n-inline fr">Management &amp; Execution</span>
-              <span class="i18n-inline en">Management &amp; Execution</span>
-            </h3>
-            <ul>
-              <li>
-                <span class="i18n-inline fr">Recrutement, formation, animation d'equipes</span>
-                <span class="i18n-inline en">Recruiting, training, and team leadership</span>
-              </li>
-              <li>
-                <span class="i18n-inline fr">Pilotage d'indicateurs de performance</span>
-                <span class="i18n-inline en">Performance KPI monitoring</span>
-              </li>
-              <li>
-                <span class="i18n-inline fr">Culture du resultat et de la transmission</span>
-                <span class="i18n-inline en">Results and knowledge-transfer culture</span>
-              </li>
-            </ul>
+            <p class="i18n-block fr" id="workflow-text-fr"></p>
+            <p class="i18n-block en" id="workflow-text-en"></p>
+
+            <div class="workflow-kpi-grid">
+              <div>
+                <h4>
+                  <span class="i18n-inline fr">KPIs proposes</span>
+                  <span class="i18n-inline en">Suggested KPIs</span>
+                </h4>
+                <ul id="workflow-kpis-fr" class="i18n-block fr"></ul>
+                <ul id="workflow-kpis-en" class="i18n-block en"></ul>
+              </div>
+              <div class="workflow-note">
+                <p class="i18n-block fr">
+                  Cette architecture permet a la mairie de gagner en clarte, en delai de traitement,
+                  et en fiabilite des rapports de service.
+                </p>
+                <p class="i18n-block en">
+                  This architecture helps the city gain clarity, faster processing, and more reliable
+                  service reporting.
+                </p>
+              </div>
+            </div>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="section reveal">
-        <div class="section-head">
+      <section id="experience" class="section premium-section reveal">
+        <header class="section-head">
+          <p class="section-kicker">
+            <span class="i18n-inline fr">Parcours</span>
+            <span class="i18n-inline en">Journey</span>
+          </p>
           <h2>
-            <span class="i18n-inline fr">Parcours professionnel</span>
-            <span class="i18n-inline en">Professional Journey</span>
+            <span class="i18n-inline fr">Experience management, execution et transformation</span>
+            <span class="i18n-inline en">Experience across management, execution and transformation</span>
           </h2>
-        </div>
+        </header>
 
-        <div class="timeline">
-          <article class="timeline-item reveal">
-            <span class="year">2025 - Present</span>
+        <div class="timeline-grid">
+          <article class="timeline-card reveal magnetic" data-magnetic-strength="8">
+            <span class="timeline-year">2025 - Present</span>
             <h3>KaMaat Conseil - Fondateur</h3>
             <p class="i18n-block fr">
-              Creation et developpement d'un cabinet specialise dans les profils commerciaux et
-              manageriaux retail, avec une approche centree humain et performance durable.
+              Construction d'un cabinet de recrutement et d'accompagnement axe sur compatibilite de
+              valeurs, performance durable et structuration commerciale.
             </p>
             <p class="i18n-block en">
-              Creation and growth of a consulting firm focused on retail commercial and managerial
-              profiles, with a human-centered and sustainable performance approach.
+              Building a recruiting and support firm focused on value compatibility, sustainable
+              performance, and commercial structuring.
             </p>
           </article>
 
-          <article class="timeline-item reveal">
-            <span class="year">2016 - 2024</span>
+          <article class="timeline-card reveal magnetic" data-magnetic-strength="8">
+            <span class="timeline-year">2016 - 2024</span>
             <h3>Boulanger - Responsable univers multimedia</h3>
             <p class="i18n-block fr">
-              Pilotage commercial et operationnel: recrutement, formation des equipes, suivi des
-              performances, gestion planning, organisation du magasin et experience client.
+              Pilotage des equipes et du business: recrutement, formation, indicateurs, organisation
+              operationnelle, relation client et plans d'action.
             </p>
             <p class="i18n-block en">
-              Commercial and operational leadership: recruitment, team training, KPI tracking,
-              schedule management, in-store organization, and customer experience.
+              Team and business leadership: recruiting, training, KPIs, operational organization,
+              customer relationship, and action plans.
             </p>
           </article>
 
-          <article class="timeline-item reveal">
-            <span class="year">2010 - 2016</span>
+          <article class="timeline-card reveal magnetic" data-magnetic-strength="8">
+            <span class="timeline-year">2010 - 2016</span>
             <h3>Boulanger - Animateur commerce multimedia</h3>
             <p class="i18n-block fr">
-              Coordination des operations commerciales, merchandising, stock, indicateurs et plans
-              d'action pour maintenir la performance des rayons.
+              Coordination commerciale, merchandising, gestion de stock et suivi des performances pour
+              assurer la qualite d'execution en magasin.
             </p>
             <p class="i18n-block en">
-              Coordination of commercial operations, merchandising, stock, KPIs, and action plans to
-              sustain department performance.
+              Commercial coordination, merchandising, stock management, and performance tracking to
+              ensure high in-store execution.
             </p>
           </article>
 
-          <article class="timeline-item reveal">
-            <span class="year">2008 - 2010</span>
+          <article class="timeline-card reveal magnetic" data-magnetic-strength="8">
+            <span class="timeline-year">2008 - 2010</span>
             <h3>Boulanger - Vendeur multimedia</h3>
             <p class="i18n-block fr">
-              Vente, conseil, fidelisation client sur les univers multimedia et electromenager.
+              Vente conseil, fidelisation et accompagnement client dans les univers multimedia et
+              electromenager.
             </p>
             <p class="i18n-block en">
-              Sales, customer advisory, and loyalty building on multimedia and home appliance
+              Advisory sales, loyalty building, and customer support in multimedia and appliance
               categories.
             </p>
           </article>
         </div>
       </section>
 
-      <section id="mission" class="section mission reveal">
-        <div class="section-head">
+      <section id="capabilities" class="section premium-section reveal">
+        <header class="section-head">
+          <p class="section-kicker">
+            <span class="i18n-inline fr">Capacites operationnelles</span>
+            <span class="i18n-inline en">Operational capabilities</span>
+          </p>
           <h2>
-            <span class="i18n-inline fr">Proposition de mission - Mairie de Port-Bouet</span>
-            <span class="i18n-inline en">Mission Proposal - Port-Bouet City Hall</span>
+            <span class="i18n-inline fr">Ce que je peux piloter pour une institution publique</span>
+            <span class="i18n-inline en">What I can lead for a public institution</span>
           </h2>
+        </header>
+
+        <div class="capability-grid">
+          <article class="capability-card magnetic" data-magnetic-strength="8">
+            <h3>
+              <span class="i18n-inline fr">Produit &amp; Transformation</span>
+              <span class="i18n-inline en">Product &amp; Transformation</span>
+            </h3>
+            <ul>
+              <li>
+                <span class="i18n-inline fr">Cadrage des besoins metiers</span>
+                <span class="i18n-inline en">Business needs framing</span>
+              </li>
+              <li>
+                <span class="i18n-inline fr">Conception de workflows de service</span>
+                <span class="i18n-inline en">Service workflow design</span>
+              </li>
+              <li>
+                <span class="i18n-inline fr">Tableaux de bord et indicateurs</span>
+                <span class="i18n-inline en">Dashboards and indicators</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="capability-card magnetic" data-magnetic-strength="8">
+            <h3>
+              <span class="i18n-inline fr">Delivery digital</span>
+              <span class="i18n-inline en">Digital delivery</span>
+            </h3>
+            <ul>
+              <li>HTML / CSS / SCSS / JS</li>
+              <li>
+                <span class="i18n-inline fr">Web admin et interfaces metier</span>
+                <span class="i18n-inline en">Web admin and business interfaces</span>
+              </li>
+              <li>
+                <span class="i18n-inline fr">Applications Android &amp; iOS</span>
+                <span class="i18n-inline en">Android &amp; iOS applications</span>
+              </li>
+            </ul>
+          </article>
+
+          <article class="capability-card magnetic" data-magnetic-strength="8">
+            <h3>
+              <span class="i18n-inline fr">Management &amp; execution</span>
+              <span class="i18n-inline en">Management &amp; execution</span>
+            </h3>
+            <ul>
+              <li>
+                <span class="i18n-inline fr">Organisation d'equipes</span>
+                <span class="i18n-inline en">Team organization</span>
+              </li>
+              <li>
+                <span class="i18n-inline fr">Pilotage de performance</span>
+                <span class="i18n-inline en">Performance steering</span>
+              </li>
+              <li>
+                <span class="i18n-inline fr">Culture resultat et responsabilisation</span>
+                <span class="i18n-inline en">Results culture and accountability</span>
+              </li>
+            </ul>
+          </article>
         </div>
 
-        <div class="mission-grid">
-          <article class="mission-card reveal">
-            <h3>
-              <span class="i18n-inline fr">Objectif</span>
-              <span class="i18n-inline en">Objective</span>
-            </h3>
-            <p class="i18n-block fr">
-              Concevoir un outil numerique pour mieux piloter, suivre et tracer les services de la
-              mairie avec des informations fiables en temps reel.
-            </p>
-            <p class="i18n-block en">
-              Design a digital tool to better monitor, track, and manage city services through
-              reliable real-time data.
-            </p>
-          </article>
-
-          <article class="mission-card reveal">
-            <h3>
-              <span class="i18n-inline fr">Approche</span>
-              <span class="i18n-inline en">Approach</span>
-            </h3>
-            <p class="i18n-block fr">
-              Construire une plateforme metier simple: tableau de bord, suivi des demandes,
-              historisation des actions, indicateurs de performance et coordination des equipes.
-            </p>
-            <p class="i18n-block en">
-              Build a simple business platform: dashboard, request tracking, action history,
-              performance indicators, and team coordination.
-            </p>
-          </article>
-
-          <article class="mission-card reveal">
-            <h3>
-              <span class="i18n-inline fr">Resultat vise</span>
-              <span class="i18n-inline en">Target Outcome</span>
-            </h3>
-            <p class="i18n-block fr">
-              Ameliorer la qualite de service, la reactivite decisionnelle et la transparence
-              operationnelle pour les equipes municipales et les citoyens.
-            </p>
-            <p class="i18n-block en">
-              Improve service quality, decision responsiveness, and operational transparency for city
-              teams and citizens.
-            </p>
-          </article>
+        <div class="proof-strip">
+          <span>Web Admin</span>
+          <span>Android</span>
+          <span>iOS</span>
+          <span>
+            <span class="i18n-inline fr">Tracabilite</span>
+            <span class="i18n-inline en">Traceability</span>
+          </span>
+          <span>KPI</span>
+          <span>
+            <span class="i18n-inline fr">Pilotage</span>
+            <span class="i18n-inline en">Steering</span>
+          </span>
         </div>
       </section>
 
-      <section class="section reveal" id="education">
-        <div class="section-head">
+      <section id="education" class="section premium-section reveal">
+        <header class="section-head">
+          <p class="section-kicker">
+            <span class="i18n-inline fr">Formation et ouverture</span>
+            <span class="i18n-inline en">Education and profile depth</span>
+          </p>
           <h2>
-            <span class="i18n-inline fr">Formation, langues, interets</span>
-            <span class="i18n-inline en">Education, Languages, Interests</span>
+            <span class="i18n-inline fr">Formation, langues et centres d'interet</span>
+            <span class="i18n-inline en">Education, languages and interests</span>
           </h2>
-        </div>
+        </header>
 
         <div class="edu-grid">
-          <article class="edu-card">
+          <article class="edu-card magnetic" data-magnetic-strength="8">
             <h3>
               <span class="i18n-inline fr">Formation</span>
               <span class="i18n-inline en">Education</span>
@@ -493,17 +558,13 @@
               <li>FCE Cambridge - Westminster University London (2005 - 2006)</li>
               <li>Baccalaureat Scientifique - Roissy-en-Brie (2004 - 2005)</li>
               <li>
-                <span class="i18n-inline fr"
-                  >Formation continue Management &amp; Leadership (Boulanger, 2016 - 2024)</span
-                >
-                <span class="i18n-inline en"
-                  >Continuous Management &amp; Leadership training (Boulanger, 2016 - 2024)</span
-                >
+                <span class="i18n-inline fr">Management &amp; Leadership Boulanger (2016 - 2024)</span>
+                <span class="i18n-inline en">Boulanger Management &amp; Leadership track (2016 - 2024)</span>
               </li>
             </ul>
           </article>
 
-          <article class="edu-card">
+          <article class="edu-card magnetic" data-magnetic-strength="8">
             <h3>
               <span class="i18n-inline fr">Langues</span>
               <span class="i18n-inline en">Languages</span>
@@ -520,7 +581,7 @@
             </ul>
           </article>
 
-          <article class="edu-card">
+          <article class="edu-card magnetic" data-magnetic-strength="8">
             <h3>
               <span class="i18n-inline fr">Centres d'interet</span>
               <span class="i18n-inline en">Interests</span>
@@ -535,8 +596,8 @@
                 <span class="i18n-inline en">Reading, cooking, personal growth</span>
               </li>
               <li>
-                <span class="i18n-inline fr">Vision business et accompagnement humain</span>
-                <span class="i18n-inline en">Business vision and human support</span>
+                <span class="i18n-inline fr">Accompagnement humain et strategie business</span>
+                <span class="i18n-inline en">Human support and business strategy</span>
               </li>
             </ul>
           </article>
@@ -547,13 +608,13 @@
     <footer class="footer reveal">
       <p>
         <span class="i18n-inline fr"
-          >Etien Cedric Manouan - Consultant Externe | Transformation Digitale &amp; Outils Metiers</span
+          >Etien Cedric Manouan - Consultant Externe | Transformation Digitale | Outils Metiers</span
         >
         <span class="i18n-inline en"
-          >Etien Cedric Manouan - External Consultant | Digital Transformation &amp; Business Tools</span
+          >Etien Cedric Manouan - External Consultant | Digital Transformation | Business Tools</span
         >
       </p>
-      <a class="btn btn-primary" href="mailto:manouanec@gmail.com">
+      <a class="btn btn-primary ripple-target magnetic" data-magnetic-strength="10" href="mailto:manouanec@gmail.com">
         <span class="i18n-inline fr">Demarrer un echange</span>
         <span class="i18n-inline en">Start a conversation</span>
       </a>
